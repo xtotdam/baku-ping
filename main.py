@@ -25,7 +25,7 @@ while True:
 
     date = datetime.datetime.now().isoformat()
     with open(logfile, 'a', encoding='utf8') as f:
-        f.write(f'{date},{pingtime},{pingerror}\n')
+        f.write(f'{date},{pingtime},"{pingerror}"\n')
 
     print(date, pingtime, pingerror)
 
